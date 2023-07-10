@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF63DB49-80C5-465D-976C-784B329F096F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracKiralama</RootNamespace>
+    <AssemblyName>AracKiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aracdüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aracdüzenle.Designer.cs">
+      <DependentUpon>Aracdüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracEkle.Designer.cs">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurumsalPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurumsalPanel.Designer.cs">
+      <DependentUpon>KurumsalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracListele.Designer.cs">
+      <DependentUpon>AracListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriListele.Designer.cs">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KARTEKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KARTEKLE.Designer.cs">
+      <DependentUpon>KARTEKLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kartlarım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kartlarım.Designer.cs">
+      <DependentUpon>kartlarım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeGeçmiş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeGeçmiş.Designer.cs">
+      <DependentUpon>ÜyeGeçmiş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜyeSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜyeSatis.Designer.cs">
+      <DependentUpon>ÜyeSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüsteriPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüsteriPanel.Designer.cs">
+      <DependentUpon>MüsteriPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGiris.Designer.cs">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracAnaSayfa.Designer.cs">
+      <DependentUpon>AracAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaPanel.Designer.cs">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüşteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüşteriEkle.Designer.cs">
+      <DependentUpon>MüşteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis.Designer.cs">
+      <DependentUpon>Satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sozlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sozlesme.Designer.cs">
+      <DependentUpon>Sozlesme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aracdüzenle.resx">
+      <DependentUpon>Aracdüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracEkle.resx">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurumsalPanel.resx">
+      <DependentUpon>KurumsalPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracListele.resx">
+      <DependentUpon>AracListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriListele.resx">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KARTEKLE.resx">
+      <DependentUpon>KARTEKLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kartlarım.resx">
+      <DependentUpon>kartlarım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüsteriPanel.resx">
+      <DependentUpon>MüsteriPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGiris.resx">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaPanel.resx">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüşteriEkle.resx">
+      <DependentUpon>MüşteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracAnaSayfa.resx">
+      <DependentUpon>AracAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satis.resx">
+      <DependentUpon>Satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sozlesme.resx">
+      <DependentUpon>Sozlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeGeçmiş.resx">
+      <DependentUpon>ÜyeGeçmiş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜyeSatis.resx">
+      <DependentUpon>ÜyeSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rent-car-firmaları.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-group %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logom1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logom2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logom3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logom4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kart1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pooo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
